@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex; /* Set the container to use flexbox */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensure the body takes up the whole viewport height */
+}
+
+a {
+    padding: 10px 20px;
+    text-decoration: underline;
+    color: rgb(247, 67, 67);
+    background-color:#553011 ;
+    margin: 5px;
+}
+h1 {
+    font-family: 'CursiveFont', cursive;
+    font-size: 36px;
+    color: #ff7627;
+    text-align: center; 
+    text-transform: uppercase; 
+}
+
+header {
+
+    display: flex; 
+    justify-content: flex-end; 
+    background-color:#553011 ;
+    padding: 10px; 
+}
+
+
+ul {
+    list-style: none; 
+    display: flex; 
+    margin: 0;
+    padding: 0;
+}
+
+
+ul li {
+    margin-right: 10px; 
+}
+nav ul a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    transition: color 0.3s ease; 
+    font-weight: bold;
+}
+
+
+nav ul a:hover {
+    color: #ff5733;
+}
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.project-card {
+    flex: 0 0 100%;
+    max-width: 300px; /* Adjust the width as needed */
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card h2 {
+    margin: 0;
+    padding: 10px;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+
+
+
+    
