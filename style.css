@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     display: flex; /* Set the container to use flexbox */
     flex-direction: column; /* Arrange children vertically */
-    align-items: center; /* Center items horizontally */
+    text-align: center;
+    align-items: center;
     justify-content: center; /* Center items vertically */
     background-color: rgb(255, 255, 255);
     background-size: cover;
@@ -64,7 +65,7 @@ nav ul a:hover {
 .project-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     padding: 20px;
     box-sizing: border-box;
 }
