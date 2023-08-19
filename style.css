@@ -43,24 +43,26 @@ header {
     padding: 10px;
 }
 
-/* Media queries for different screen sizes */
-
-/* For mobile devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .header, .footer {
         background-color:#553011 ;
     }
 }
 
-/* For tablets and larger screens */
-@media screen and (min-width: 769px) {
+/* For screens from 481px to 768px (larger mobile devices and small tablets) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
     .content {
-        width: 80%;
-        margin: 0 auto;
+        padding: 10px;
     }
 }
 
-ul {
+/* For screens from 769px and larger (tablets, laptops, desktops) */
+@media screen and (min-width: 769px) {
+    .header, .footer {
+        background-color:#553011;
+    }
+} 
+ul{
     list-style: none; 
     display: flex; 
     margin: 0;
@@ -86,14 +88,14 @@ nav ul a:hover {
 }
 .project-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Arrange cards vertically */
+    align-items: center; /* Center cards horizontally */
     
     padding: 20px;
     box-sizing: border-box;
 }
 
 .project-card {
-    flex: 0 0 100%;
     max-width: 300px; /* Adjust the width as needed */
     text-align: center;
     background-color: #f4f4f4;
@@ -102,6 +104,7 @@ nav ul a:hover {
     box-sizing: border-box;
     opacity: 0;
     animation: fade-in 1s ease-in-out forwards;
+    margin-bottom: 20px; /* Add some space between cards */
 }
 
 @keyframes fade-in {
