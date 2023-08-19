@@ -36,6 +36,29 @@ header {
     background-color:#553011 ;
     padding: 10px; 
 }
+.footer {
+    background-color:#553011  ;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Media queries for different screen sizes */
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+    .header, .footer {
+        background-color:#553011 ;
+    }
+}
+
+/* For tablets and larger screens */
+@media screen and (min-width: 769px) {
+    .content {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
 
 ul {
     list-style: none; 
